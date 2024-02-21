@@ -15,11 +15,6 @@ function App() {
     <>
      <ConfigProvider
       locale={zhCN}
-      // theme={{
-      //   token: {
-      //     colorPrimary: primaryColor,
-      //   },
-      // }}
     >
       <Suspense fallback={<Spin size="large" className="globa_spin" />}>
         <BasicLayout />
