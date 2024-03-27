@@ -20,13 +20,13 @@ function RightContent() {
   const popContent = () => {
     return (
       <div className={styles.content_container}>
-        <div className={styles.option_item} onClick={() => handleExit()}>
-          <LoginOutlined />
-          <div className={styles.option_txt}>退出登录</div>
-        </div>
         <div className={styles.option_item} onClick={() => navigate('/setting')}>
           <ToolOutlined />
           <div className={styles.option_txt}>设置</div>
+        </div>
+        <div className={styles.option_item} onClick={() => handleExit()}>
+          <LoginOutlined />
+          <div className={styles.option_txt}>退出登录</div>
         </div>
       </div>
     )
@@ -42,7 +42,6 @@ function RightContent() {
           {userNamae}
         </div>
       </Popover>
-
     </div>
   )
 }
